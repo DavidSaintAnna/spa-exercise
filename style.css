@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-color: #e1e1e6;
+  --a-color: #8d8d99;
+  --background-img: url("./assets/images/mountains-universe-1.png");
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: var(--background-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.universe {
+  --background-img: url("./assets/images/mountains-universe02.png");
+}
+
+body.exploration {
+  --background-img: url("./assets/images/mountains-universe-3.png");
+}
+
+.page {
+  min-width: 36rem;
+}
+
+nav {
+  margin-top: 4rem;
+  margin-left: 0.8rem;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+/* nav > svg {
+  width: 4.9rem;
+  height: 4.2rem;
+} */
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--a-color);
+  text-decoration: none;
+}
+
+a:visited {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--font-color);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 160%;
+  color: var(--font-color);
+  text-align: left;
+}
+
+main {
+  margin-top: 17.2rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+article {
+  margin-top: 12.3rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.3rem;
+  gap: 1.6rem;
+  justify-content: left;
+  text-align: left;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 1.2rem 3.2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #ffffff;
+}
+@media (min-width: 700px) {
+  .page {
+    width: 100%;
+    height: 100vh;
+  }
+  nav {
+    margin-top: 4rem;
+    width: 48.9rem;
+    height: 4.2rem;
+    gap: 4.2rem;
+    margin-left: 7.2rem;
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+  }
+  main {
+    margin-top: 23.2rem;
+    gap: 2.4rem;
+  }
+
+  article {
+    width: 64.8rem;
+    height: 20.3rem;
+    margin-top: 6.3rem;
+    display: flex;
+    margin-left: calc(50% - 648px / 2 - 214px);
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: left;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
