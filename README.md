@@ -1,4 +1,4 @@
-# js-module
+# spa-universe
 <p align="center">
  <a href="#eye_speech_bubble-visualizar">Visualizar</a> •
  <a href="#information_source-sobre">Sobre</a> •
